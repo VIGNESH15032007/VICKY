@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-fixed-dim": "#d0bcff", "secondary": "#ddb8ff", "on-surface-variant": "#cbc3d7", "error": "#ffb4ab", "outline-variant": "#494454", "on-primary-fixed-variant": "#5516be", "on-primary": "#3c0091", "primary": "#d0bcff", "surface-container-lowest": "#100c18", "on-primary-container": "#340080", "secondary-fixed": "#f0dbff", "primary-container": "#a078ff", "on-tertiary-fixed-variant": "#005236", "on-tertiary": "#003824", "surface-container-high": "#2c2834", "surface-bright": "#3b3744", "primary-fixed": "#e9ddff", "surface-variant": "#373340", "on-secondary-fixed": "#2c0051", "on-error": "#690005", "tertiary-fixed": "#6ffbbe", "tertiary": "#4edea3", "on-secondary-container": "#d1a1ff", "surface-container": "#211e2a", "surface-container-low": "#1d1a26", "on-secondary-fixed-variant": "#62259b", "on-surface": "#e7dff0", "surface": "#15121d", "on-primary-fixed": "#23005c", "tertiary-fixed-dim": "#4edea3", "surface-tint": "#d0bcff", "on-secondary": "#490081", "inverse-primary": "#6d3bd7", "inverse-surface": "#e7dff0", "surface-dim": "#15121d", "error-container": "#93000a", "on-error-container": "#ffdad6", "on-background": "#e7dff0", "tertiary-container": "#00a572", "secondary-fixed-dim": "#ddb8ff", "on-tertiary-fixed": "#002113", "surface-container-highest": "#373340", "secondary-container": "#62259b", "inverse-on-surface": "#322e3b", "outline": "#958ea0", "background": "#15121d", "on-tertiary-container": "#00311f" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter": "1rem", "space-xs": "0.25rem", "space-xl": "2rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem" }, "fontFamily": { "body-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "headline-xl": ["36px", {"lineHeight": "44px", "fontWeight": "700"}], "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}], "headline-lg": ["28px", {"lineHeight": "36px", "fontWeight": "700"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "label-sm": ["11px", {"lineHeight": "14px", "fontWeight": "500"}], "headline-xl-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}], "headline-lg-mobile": ["22px", {"lineHeight": "30px", "fontWeight": "600"}], "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}], "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.35)]"><div class="h-20 px-margin flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm min-w-0"><img alt="MetroPulse Transit Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XHo943g1t9c6rTj-fIl0gDPzD8rH5bR5Rj0GRd6Gp8ttjZ2bDym0IHMOjVZP1sJiqrmfV7udvDO_V0ErcEqBkY8fJWniRZvJItqqOa06-XU3oKrMbPBhfuo9FJGoX5s--huoDzUzTzvzfOeE2ZWr6sXZ2aWDT6O_bAQK0FsSZWu_KBW1RtQkhdfLoKaKTeim60guqApqAnJ0s2RRSEeqBkLWiZ_ttf3g4tQ97Ho0qsAFJh-YACQYeaGQA"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">MetroPulse Transit</span><span class="font-label-sm text-label-sm text-on-surface-variant hidden xs:inline">• Dashboard</span></div><div class="flex items-center gap-space-xs"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span><span class="font-label-sm text-label-sm text-tertiary tracking-wider font-semibold">LIVE GPS ACTIVE</span></div></div></div><div class="flex items-center gap-space-xs shrink-0"><button class="h-11 px-space-xs rounded-full bg-surface-container flex items-center gap-space-xs text-on-surface text-label-sm font-label-sm hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-primary text-[18px]">commute</span><span class="hidden sm:inline">Passenger</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApBErYEu-VfWjtA16fYK83m4JRrXs29LoF4fch7S_pdCdWOfhsbwDC-ELy3MGQyq9xRzOdZ_KrUPhx8wTJLaI-elvDwPfS-TPdz4PDfdCXfmZj6b4WLWNGLpWV21TqiOwAF2M604JaEGBpFJI8cB8olLtlSvpmWfU5s5jw-wsERFYZDGTW-oMSDcDEZ9fx__Hx5pYJPDE879b-_92G18Ca7ovS666lH-HjoOMi9XhSG5uzvVq5nlQW"/></div></div></header><main class="flex flex-col relative w-full pt-20 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Toast / Notification Preview -->
+<div class="px-margin pt-space-sm pb-space-xs transition-all duration-300" id="toastSuccess">
+<div class="bg-surface-container-high/90 backdrop-blur-xl rounded-xl p-space-md shadow-xl flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-tertiary-container/30 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-tertiary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Feedback Synced</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Thank you! Your feedback has been submitted successfully.</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Ref #FB-8942</span>
+<span class="text-outline text-label-sm">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Under Municipal Review</span>
+</div>
+</div>
+</div>
+<button aria-label="Dismiss toast" class="p-1 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" onclick="document.getElementById('toastSuccess').classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Header & Telemetry Intro -->
+<div class="px-margin pt-space-sm pb-space-md">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-tertiary tracking-wide uppercase font-semibold">Connected to Fleet Dispatch Hub</span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight">Bus Feedback</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+      Help improve small city transit. Your feedback directly syncs to municipal transit dispatch and real-time operations.
+    </p>
+<div class="flex items-center gap-space-sm mt-3 flex-wrap">
+<div class="flex items-center gap-space-xs bg-surface-container px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[15px] text-primary">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Anonymous or Verified</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[15px] text-tertiary">bolt</span>
+<span class="font-label-sm text-label-sm text-tertiary">Average Response: &lt; 2h</span>
+</div>
+</div>
+</div>
+<!-- Form Wrapper -->
+<div class="px-margin flex flex-col gap-space-lg">
+<!-- Trip Selector Section -->
+<div class="bg-surface-container/80 backdrop-blur-xl rounded-xl p-space-md shadow-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Trip Telemetry Selector</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded-full">3 Inputs</span>
+</div>
+<!-- Selectors Stack -->
+<div class="flex flex-col gap-space-sm">
+<!-- Select Bus -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between">
+<span>Select Transit Vehicle</span>
+<span class="text-primary text-label-sm">Active Fleet</span>
+</label>
+<div class="relative bg-surface-container-low rounded-lg shadow-sm">
+<div class="flex items-center px-space-sm py-2.5 gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0">directions_bus</span>
+<select class="w-full bg-transparent font-body-md text-body-md text-on-surface focus:outline-none appearance-none cursor-pointer pr-6">
+<option class="bg-surface-container text-on-surface" value="42B">Bus 42B - Blue Express</option>
+<option class="bg-surface-container text-on-surface" value="12A">Bus 12A - Hillside Shuttle</option>
+<option class="bg-surface-container text-on-surface" value="07">Bus 07 - Downtown Circular</option>
+<option class="bg-surface-container text-on-surface" value="18">Bus 18 - Valley Link</option>
+</select>
+</div>
+<span class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Select Route -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Active Transit Corridor</label>
+<div class="relative bg-surface-container-low rounded-lg shadow-sm">
+<div class="flex items-center px-space-sm py-2.5 gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">alt_route</span>
+<select class="w-full bg-transparent font-body-md text-body-md text-on-surface focus:outline-none appearance-none cursor-pointer pr-6">
+<option class="bg-surface-container text-on-surface" value="104">Route 104: Central Station → West Ridge</option>
+<option class="bg-surface-container text-on-surface" value="12">Route 12: Greenfield Loop</option>
+<option class="bg-surface-container text-on-surface" value="07">Route 07: Downtown Circular Ring</option>
+</select>
+</div>
+<span class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Select Trip Window -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Time &amp; Schedule Window</label>
+<div class="relative bg-surface-container-low rounded-lg shadow-sm">
+<div class="flex items-center px-space-sm py-2.5 gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0">schedule</span>
+<select class="w-full bg-transparent font-body-md text-body-md text-on-surface focus:outline-none appearance-none cursor-pointer pr-6">
+<option class="bg-surface-container text-on-surface" value="today-am">Today, Morning Commute (08:15 AM)</option>
+<option class="bg-surface-container text-on-surface" value="today-pm">Today, Afternoon Peak (02:30 PM)</option>
+<option class="bg-surface-container text-on-surface" value="yesterday">Yesterday, Evening Run (06:45 PM)</option>
+</select>
+</div>
+<span class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Live Experience Rating -->
+<div class="bg-surface-container-lowest/80 rounded-xl p-space-sm flex flex-col items-center gap-space-xs text-center mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Overall Trip Experience</span>
+<div class="flex items-center gap-2 my-1" id="starContainer">
+<button aria-label="Rate 1 star" class="star-btn p-1 text-primary focus:outline-none transition-transform active:scale-95" onclick="setRating(1)" type="button">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button aria-label="Rate 2 stars" class="star-btn p-1 text-primary focus:outline-none transition-transform active:scale-95" onclick="setRating(2)" type="button">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button aria-label="Rate 3 stars" class="star-btn p-1 text-primary focus:outline-none transition-transform active:scale-95" onclick="setRating(3)" type="button">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button aria-label="Rate 4 stars" class="star-btn p-1 text-primary focus:outline-none transition-transform active:scale-95" onclick="setRating(4)" type="button">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button aria-label="Rate 5 stars" class="star-btn p-1 text-primary focus:outline-none transition-transform active:scale-95" onclick="setRating(5)" type="button">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+</div>
+<span class="font-label-lg text-label-lg text-primary font-semibold" id="ratingDescriptor">⭐ 5/5 - Excellent Service</span>
+</div>
+</div>
+<!-- Category Pill Chips -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Feedback Category</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tap to tag triage</span>
+</div>
+<div class="flex flex-wrap gap-2" id="categoryGroup">
+<button class="cat-pill px-3 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" onclick="toggleCategory(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">directions_bus</span>
+<span>Bus Service</span>
+</button>
+<button class="cat-pill px-3 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" onclick="toggleCategory(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+<span>Driver Courtesy</span>
+</button>
+<button class="cat-pill px-3 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" onclick="toggleCategory(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">sanitizer</span>
+<span>Cleanliness &amp; AC</span>
+</button>
+<button class="cat-pill px-3 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 transition-all bg-primary-container text-on-primary-container shadow-md" onclick="toggleCategory(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Timing &amp; Delays</span>
+</button>
+<button class="cat-pill px-3 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" onclick="toggleCategory(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">airline_seat_recline_normal</span>
+<span>Seat Availability</span>
+</button>
+<button class="cat-pill px-3 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" onclick="toggleCategory(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">more_horiz</span>
+<span>Other</span>
+</button>
+</div>
+</div>
+<!-- Detailed Text Area & GPS Toggle -->
+<div class="bg-surface-container/80 backdrop-blur-xl rounded-xl p-space-md shadow-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-headline-sm text-on-surface" for="feedbackMessage">Detailed Experience</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="charCounter">142 / 500 characters</span>
+</div>
+<div class="relative bg-surface-container-low rounded-lg p-2 shadow-inner">
+<textarea class="w-full bg-transparent text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none resize-none p-1" id="feedbackMessage" maxlength="500" oninput="updateCharCount(this)" placeholder="Tell us about your experience, route delays, driver assistance, or vehicle conditions..." rows="4">Bus 42B was slightly held up near the Willow Creek interchange. Driver Marcus handled the re-route smoothly and communicated clearly.</textarea>
+</div>
+<!-- Telemetry Consent Switch -->
+<div class="flex items-center justify-between bg-surface-container-lowest/60 rounded-lg p-3 mt-1">
+<div class="flex items-center gap-2 min-w-0">
+<span class="relative flex h-2.5 w-2.5 shrink-0">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"></span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Attach Trip Telemetry</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Bus 42B GPS log at Willow Creek</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" id="telemetryToggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-transparent after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Submit Action Button -->
+<button class="mt-2 w-full min-h-[48px] rounded-xl bg-primary-container text-on-primary-container font-headline-sm text-headline-sm flex items-center justify-center gap-space-xs shadow-lg hover:bg-primary transition-all active:scale-[0.99]" onclick="simulateSubmit()" type="button">
+<span>Submit Feedback</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<div class="flex items-center justify-center gap-1.5 text-center mt-1">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">sync_alt</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Logged directly to Admin Dashboard → Incident &amp; Feedback Triage</span>
+</div>
+</div>
+<!-- History Section -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Your Submitted Feedback</span>
+<span class="bg-surface-container-high text-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">3 Submissions</span>
+</div>
+</div>
+<!-- History Filter Chips -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1" id="historyFilters">
+<button class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-primary text-on-primary font-semibold shrink-0" onclick="filterHistory('all', this)" type="button">All</button>
+<button class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant shrink-0 hover:text-on-surface" onclick="filterHistory('pending', this)" type="button">Pending (1)</button>
+<button class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant shrink-0 hover:text-on-surface" onclick="filterHistory('resolved', this)" type="button">Resolved (1)</button>
+<button class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant shrink-0 hover:text-on-surface" onclick="filterHistory('reviewed', this)" type="button">Reviewed (1)</button>
+</div>
+<!-- Past Submissions Cards -->
+<div class="flex flex-col gap-space-sm" id="historyCardsContainer">
+<!-- Card 1: Pending/Under Review -->
+<div class="history-item pending bg-surface-container/90 backdrop-blur-xl rounded-xl p-space-md shadow-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Bus 12A • Hillside Shuttle</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Oak Plaza → Pine Ridge</span>
+</div>
+<span class="bg-amber-500/20 text-amber-300 px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold shrink-0 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+              Under Review
+            </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-1">
+<div class="flex items-center gap-1">
+<span class="text-amber-400 font-label-md text-label-md">⭐⭐⭐☆☆</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(3/5)</span>
+</div>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant">Cleanliness &amp; AC</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1 leading-snug">
+            "AC temperature on Bus 12A was stuck on low vent flow near the 4th row during peak afternoon heat."
+          </p>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span>Submitted Today, 10:14 AM</span>
+<span class="text-primary">Ticket #FB-8910</span>
+</div>
+<div class="bg-surface-container-lowest/80 rounded-lg p-2.5 flex items-start gap-2 mt-1">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">engineering</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Dispatch Response</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dispatch assigned ticket to Depot Tech team for inspection tonight.</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Resolved -->
+<div class="history-item resolved bg-surface-container/90 backdrop-blur-xl rounded-xl p-space-md shadow-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Bus 42B • North Express</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Central Stn → Willow Creek</span>
+</div>
+<span class="bg-tertiary-container/30 text-tertiary px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check</span>
+              Resolved
+            </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-1">
+<div class="flex items-center gap-1">
+<span class="text-tertiary font-label-md text-label-md">⭐⭐⭐⭐⭐</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(5/5)</span>
+</div>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant">Driver Courtesy</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1 leading-snug">
+            "Driver Marcus Vance was exceptionally courteous and waited 15 seconds for elderly passengers to safely cross and board."
+          </p>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span>Submitted Yesterday, 05:40 PM</span>
+<span class="text-tertiary">Commendation #FB-8874</span>
+</div>
+<div class="bg-surface-container-lowest/80 rounded-lg p-2.5 flex items-start gap-2 mt-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5">verified</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Civic Commendation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Official commendation logged to driver profile and reviewed by Depot Manager.</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Reviewed -->
+<div class="history-item reviewed bg-surface-container/90 backdrop-blur-xl rounded-xl p-space-md shadow-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Bus 07 • Downtown Circular</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Market St Loop</span>
+</div>
+<span class="bg-secondary-container/50 text-secondary px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+              Reviewed
+            </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-1">
+<div class="flex items-center gap-1">
+<span class="text-primary font-label-md text-label-md">⭐⭐☆☆☆</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(2/5)</span>
+</div>
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant">Timing / Delay</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1 leading-snug">
+            "Bus was delayed by 12 minutes at 4th St interchange due to unscheduled detour without app alert."
+          </p>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span>Submitted Oct 24, 2023</span>
+<span class="text-secondary">Incident #FB-8641</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State Component Banner (Delightful fallback pattern) -->
+<div class="bg-surface-container-low/70 rounded-xl p-space-md flex items-center gap-space-md mb-space-lg">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-outline text-[24px]">chat_bubble_outline</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface">No active grievances?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+          Your feedback history will appear here once submitted. Every report helps fine-tune bus intervals.
+        </span>
+</div>
+</div>
+</div>
+<!-- Micro-interactions Script -->
+<script>
+    function setRating(stars) {
+      const labels = [
+        "⭐ 1/5 - Unsatisfactory",
+        "⭐ 2/5 - Needs Improvement",
+        "⭐ 3/5 - Average Commute",
+        "⭐ 4/5 - Good Transit Experience",
+        "⭐ 5/5 - Excellent Service"
+      ];
+      document.getElementById('ratingDescriptor').innerText = labels[stars - 1];
+      const buttons = document.querySelectorAll('.star-btn span');
+      buttons.forEach((btn, index) => {
+        if (index < stars) {
+          btn.style.fontVariationSettings = "'FILL' 1";
+          btn.className = "material-symbols-outlined text-[28px] text-primary";
+        } else {
+          btn.style.fontVariationSettings = "'FILL' 0";
+          btn.className = "material-symbols-outlined text-[28px] text-outline";
+        }
+      });
+    }
+
+    function toggleCategory(button) {
+      const isActive = button.classList.contains('bg-primary-container');
+      if (isActive) {
+        button.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-md');
+        button.classList.add('bg-surface-container', 'text-on-surface');
+      } else {
+        button.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-md');
+        button.classList.remove('bg-surface-container', 'text-on-surface');
+      }
+    }
+
+    function updateCharCount(el) {
+      const current = el.value.length;
+      document.getElementById('charCounter').innerText = current + " / 500 characters";
+    }
+
+    function simulateSubmit() {
+      const toast = document.getElementById('toastSuccess');
+      if (toast) {
+        toast.classList.remove('hidden');
+        toast.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function filterHistory(filter, el) {
+      const buttons = document.querySelectorAll('#historyFilters button');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      el.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+      el.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+      const items = document.querySelectorAll('.history-item');
+      items.forEach(card => {
+        if (filter === 'all' || card.classList.contains(filter)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-[#120B22]/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.5)]" data-active-classes="text-primary [filter:drop-shadow(0_0_8px_rgba(208,188,255,0.4))]"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-all hover:text-on-surface" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-all hover:text-on-surface" data-path="live-tracking" href="#"><span class="material-symbols-outlined text-[22px]">radar</span><span class="font-label-sm text-label-sm">Live Track</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-all hover:text-on-surface" data-path="route-search" href="#"><span class="material-symbols-outlined text-[22px]">search</span><span class="font-label-sm text-label-sm">Search</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-all hover:text-on-surface" data-path="nearby-stops" href="#"><span class="material-symbols-outlined text-[22px]">location_on</span><span class="font-label-sm text-label-sm">Stops</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-all hover:text-on-surface" data-path="transit-alerts" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="font-label-sm text-label-sm">Alerts</span></a></div></nav></body></html>

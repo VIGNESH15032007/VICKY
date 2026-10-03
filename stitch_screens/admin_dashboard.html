@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-fixed-dim": "#d0bcff", "secondary": "#ddb8ff", "on-surface-variant": "#cbc3d7", "error": "#ffb4ab", "outline-variant": "#494454", "on-primary-fixed-variant": "#5516be", "on-primary": "#3c0091", "primary": "#d0bcff", "surface-container-lowest": "#100c18", "on-primary-container": "#340080", "secondary-fixed": "#f0dbff", "primary-container": "#a078ff", "on-tertiary-fixed-variant": "#005236", "on-tertiary": "#003824", "surface-container-high": "#2c2834", "surface-bright": "#3b3744", "primary-fixed": "#e9ddff", "surface-variant": "#373340", "on-secondary-fixed": "#2c0051", "on-error": "#690005", "tertiary-fixed": "#6ffbbe", "tertiary": "#4edea3", "on-secondary-container": "#d1a1ff", "surface-container": "#211e2a", "surface-container-low": "#1d1a26", "on-secondary-fixed-variant": "#62259b", "on-surface": "#e7dff0", "surface": "#15121d", "on-primary-fixed": "#23005c", "tertiary-fixed-dim": "#4edea3", "surface-tint": "#d0bcff", "on-secondary": "#490081", "inverse-primary": "#6d3bd7", "inverse-surface": "#e7dff0", "surface-dim": "#15121d", "error-container": "#93000a", "on-error-container": "#ffdad6", "on-background": "#e7dff0", "tertiary-container": "#00a572", "secondary-fixed-dim": "#ddb8ff", "on-tertiary-fixed": "#002113", "surface-container-highest": "#373340", "secondary-container": "#62259b", "inverse-on-surface": "#322e3b", "outline": "#958ea0", "background": "#15121d", "on-tertiary-container": "#00311f" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter": "1rem", "space-xs": "0.25rem", "space-xl": "2rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem" }, "fontFamily": { "body-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "headline-xl": ["36px", {"lineHeight": "44px", "fontWeight": "700"}], "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}], "headline-lg": ["28px", {"lineHeight": "36px", "fontWeight": "700"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "label-sm": ["11px", {"lineHeight": "14px", "fontWeight": "500"}], "headline-xl-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}], "headline-lg-mobile": ["22px", {"lineHeight": "30px", "fontWeight": "600"}], "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}], "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.35)]"><div class="h-16 px-margin flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0"><button class="w-11 h-11 flex items-center justify-center text-on-surface rounded-full hover:bg-surface-container active:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back</span></button><img alt="MetroPulse Transit Logo" class="h-7 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XHo943g1t9c6rTj-fIl0gDPzD8rH5bR5Rj0GRd6Gp8ttjZ2bDym0IHMOjVZP1sJiqrmfV7udvDO_V0ErcEqBkY8fJWniRZvJItqqOa06-XU3oKrMbPBhfuo9FJGoX5s--huoDzUzTzvzfOeE2ZWr6sXZ2aWDT6O_bAQK0FsSZWu_KBW1RtQkhdfLoKaKTeim60guqApqAnJ0s2RRSEeqBkLWiZ_ttf3g4tQ97Ho0qsAFJh-YACQYeaGQA"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate tracking-tight">Admin Dispatch Panel</h1></div><div class="flex items-center gap-space-xs shrink-0"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApBErYEu-VfWjtA16fYK83m4JRrXs29LoF4fch7S_pdCdWOfhsbwDC-ELy3MGQyq9xRzOdZ_KrUPhx8wTJLaI-elvDwPfS-TPdz4PDfdCXfmZj6b4WLWNGLpWV21TqiOwAF2M604JaEGBpFJI8cB8olLtlSvpmWfU5s5jw-wsERFYZDGTW-oMSDcDEZ9fx__Hx5pYJPDE879b-_92G18Ca7ovS666lH-HjoOMi9XhSG5uzvVq5nlQW"/></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-10">
+<!-- Top Command Telemetry Strip -->
+<div class="px-margin pt-space-md pb-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs bg-surface-container-high px-3 py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">location_city</span>
+<select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer pr-1">
+<option class="bg-surface-container-highest text-on-surface" value="riverdale">Riverdale Metro (Population: 94k)</option>
+<option class="bg-surface-container-highest text-on-surface" value="cedarvale">Cedarvale Valley District</option>
+<option class="bg-surface-container-highest text-on-surface" value="oakwood">Oakwood Springs Transit</option>
+</select>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-tertiary text-[14px]">sensors</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono" id="live-telemetry-clock">14:38:09 UTC</span>
+</div>
+</div>
+<!-- Alert / Broadcast Bar -->
+<div class="flex items-center justify-between gap-space-sm bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-high p-space-sm rounded-xl">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-8 h-8 rounded-lg bg-error-container/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-error text-[18px]">campaign</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-error font-semibold uppercase tracking-wider">Public Channel</p>
+<p class="font-body-sm text-body-sm text-on-surface truncate">Transit alert broadcast idle • System optimal</p>
+</div>
+</div>
+<button class="shrink-0 flex items-center gap-1.5 px-3 py-2 bg-error text-on-error rounded-lg font-label-sm text-label-sm font-semibold active:opacity-80 transition-opacity" id="broadcastBtn">
+<span class="material-symbols-outlined text-[16px]">emergency</span>
+<span>Broadcast</span>
+</button>
+</div>
+</div>
+<!-- Main Dispatch Section -->
+<div class="px-margin flex flex-col gap-space-md mt-space-xs">
+<!-- KPI Telemetry Grid (6 Metrics Bento) -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Total Active Fleet -->
+<div class="bg-surface-container p-space-md rounded-2xl flex flex-col justify-between shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Fleet</span>
+<span class="w-7 h-7 rounded-lg bg-primary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[18px]">directions_bus</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">24</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 28</span>
+</div>
+<div class="flex items-center gap-1 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm text-tertiary">86% Operational</span>
+</div>
+</div>
+</div>
+<!-- Verified Drivers -->
+<div class="bg-surface-container p-space-md rounded-2xl flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Shift Drivers</span>
+<span class="w-7 h-7 rounded-lg bg-secondary-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[18px]">badge</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">26</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Verified on Console</p>
+</div>
+</div>
+<!-- Active Corridors -->
+<div class="bg-surface-container p-space-md rounded-2xl flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Corridors</span>
+<span class="w-7 h-7 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[18px]">alt_route</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">8</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Core Routes Active</p>
+</div>
+</div>
+<!-- Live Trips -->
+<div class="bg-surface-container p-space-md rounded-2xl flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live Trips</span>
+<span class="w-7 h-7 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-[18px]">navigation</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">19</span>
+</div>
+<p class="font-label-sm text-label-sm text-tertiary mt-1">In Transit Now</p>
+</div>
+</div>
+<!-- Ridership Today -->
+<div class="bg-surface-container p-space-md rounded-2xl flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Today's Riders</span>
+<span class="w-7 h-7 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[18px]">groups</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">14,820</span>
+</div>
+<p class="font-label-sm text-label-sm text-tertiary mt-1">+8.4% vs Yesterday</p>
+</div>
+</div>
+<!-- On-Time Telemetry Rate -->
+<div class="bg-surface-container p-space-md rounded-2xl flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">On-Time Rate</span>
+<span class="w-7 h-7 rounded-lg bg-tertiary-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-[18px]">timer</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-tertiary font-bold">93.8%</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Target: &gt; 90.0%</p>
+</div>
+</div>
+</div>
+<!-- Live Geospatial Mini Map Panel -->
+<div class="bg-surface-container rounded-2xl overflow-hidden shadow-md flex flex-col">
+<div class="px-space-md pt-space-md pb-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Live Fleet Positioning</h2>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-0.5 rounded-full text-on-surface-variant">6 Units Pinned</span>
+</div>
+<!-- Map Display Container -->
+<div class="relative w-full h-56 bg-surface-container-lowest overflow-hidden">
+<div class="w-full h-full bg-cover bg-center opacity-70" data-location="Riverdale Smart Transit Corridor" style="background-image: url('https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent pointer-events-none"></div>
+<!-- Bus 42B Marker -->
+<button class="group absolute top-10 left-16 flex flex-col items-center" onclick="highlightBus('42B')">
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-lg flex items-center gap-1 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[12px]">directions_bus</span>42B
+          </span>
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-md"></span>
+</button>
+<!-- Bus 18 Marker -->
+<button class="group absolute top-24 left-44 flex flex-col items-center" onclick="highlightBus('18')">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary-fixed font-label-sm text-label-sm font-bold shadow-lg flex items-center gap-1 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[12px]">directions_bus</span>18
+          </span>
+<span class="w-2 h-2 rounded-full bg-error shadow-md"></span>
+</button>
+<!-- Bus 09 Marker -->
+<button class="group absolute bottom-12 left-28 flex flex-col items-center" onclick="highlightBus('09')">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold shadow-lg flex items-center gap-1 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[12px]">directions_bus</span>09
+          </span>
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-md"></span>
+</button>
+<!-- Bus 12A Marker -->
+<button class="group absolute top-6 right-20 flex flex-col items-center" onclick="highlightBus('12A')">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold shadow-lg flex items-center gap-1 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[12px]">directions_bus</span>12A
+          </span>
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-md"></span>
+</button>
+<!-- Bus 15 Marker -->
+<button class="group absolute bottom-16 right-16 flex flex-col items-center" onclick="highlightBus('15')">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold shadow-lg flex items-center gap-1 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[12px]">directions_bus</span>15
+          </span>
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-md"></span>
+</button>
+<!-- Bus 04 Marker (Depot) -->
+<button class="group absolute bottom-4 left-6 flex flex-col items-center" onclick="highlightBus('04')">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-outline font-label-sm text-label-sm font-bold shadow-lg flex items-center gap-1 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[12px]">garage</span>04
+          </span>
+<span class="w-2 h-2 rounded-full bg-outline shadow-md"></span>
+</button>
+<!-- Floating Quick Map Recenter -->
+<div class="absolute bottom-2 right-2 flex gap-1 bg-surface-container-high/90 backdrop-blur-md p-1 rounded-lg">
+<button class="w-7 h-7 flex items-center justify-center rounded text-on-surface hover:bg-surface-container-highest active:bg-surface-container">
+<span class="material-symbols-outlined text-[16px]">layers</span>
+</button>
+<button class="w-7 h-7 flex items-center justify-center rounded text-on-surface hover:bg-surface-container-highest active:bg-surface-container">
+<span class="material-symbols-outlined text-[16px]">my_location</span>
+</button>
+</div>
+</div>
+<!-- Quick Fleet Telemetry List -->
+<div class="p-space-sm flex flex-col gap-space-xs">
+<!-- Bus 42B -->
+<div class="p-space-sm rounded-xl bg-surface-container-high flex flex-col gap-1 transition-all" id="card-bus-42B">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-md bg-primary-container text-on-primary font-label-sm text-label-sm font-bold">#42B</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">North Express</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Driver: M. Vance</p>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary bg-tertiary-container/30 px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span> Running (On Time)
+              </span>
+<p class="font-label-sm text-label-sm text-on-surface-variant font-mono mt-0.5">41 km/h • 84% Load</p>
+</div>
+</div>
+</div>
+<!-- Bus 18 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1 transition-all" id="card-bus-18">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">#18</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Valley Link</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Driver: S. Chen</p>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-error bg-error-container/30 px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Slow Traffic (+4m)
+              </span>
+<p class="font-label-sm text-label-sm text-on-surface-variant font-mono mt-0.5">18 km/h • 62% Load</p>
+</div>
+</div>
+</div>
+<!-- Bus 04 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1 transition-all" id="card-bus-04">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold">#04</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">South Depot Station</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Driver: R. Miller</p>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-highest px-2 py-0.5 rounded-full">
+                Maintenance / Idle
+              </span>
+<p class="font-label-sm text-label-sm text-on-surface-variant font-mono mt-0.5">Depot Bay 3</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Administrative Action Center -->
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold px-1">Quick Admin Actions</h3>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Add New Bus -->
+<button class="bg-surface-container hover:bg-surface-container-high active:bg-surface-container-highest p-space-sm rounded-xl flex items-center gap-space-xs text-left transition-colors group">
+<div class="w-10 h-10 rounded-xl bg-primary-container/20 flex items-center justify-center shrink-0 group-hover:bg-primary-container/30 transition-colors">
+<span class="material-symbols-outlined text-primary text-[22px]">add_circle</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Add New Bus</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Deploy to service</p>
+</div>
+</button>
+<!-- Assign Driver -->
+<button class="bg-surface-container hover:bg-surface-container-high active:bg-surface-container-highest p-space-sm rounded-xl flex items-center gap-space-xs text-left transition-colors group">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/20 flex items-center justify-center shrink-0 group-hover:bg-secondary-container/30 transition-colors">
+<span class="material-symbols-outlined text-secondary text-[22px]">person_add</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Assign Driver</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Shift scheduling</p>
+</div>
+</button>
+<!-- Manage Routes -->
+<button class="bg-surface-container hover:bg-surface-container-high active:bg-surface-container-highest p-space-sm rounded-xl flex items-center gap-space-xs text-left transition-colors group">
+<div class="w-10 h-10 rounded-xl bg-tertiary-container/20 flex items-center justify-center shrink-0 group-hover:bg-tertiary-container/30 transition-colors">
+<span class="material-symbols-outlined text-tertiary text-[22px]">route</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Manage Routes</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Stops &amp; timings</p>
+</div>
+</button>
+<!-- Passenger Complaints -->
+<button class="bg-surface-container hover:bg-surface-container-high active:bg-surface-container-highest p-space-sm rounded-xl flex items-center gap-space-xs text-left transition-colors group relative">
+<div class="w-10 h-10 rounded-xl bg-error-container/30 flex items-center justify-center shrink-0 group-hover:bg-error-container/40 transition-colors">
+<span class="material-symbols-outlined text-error text-[22px]">mark_chat_unread</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Complaints</p>
+<span class="px-1.5 py-0.2 rounded-full bg-error text-on-error font-label-sm text-label-sm font-bold">2</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Review reports</p>
+</div>
+</button>
+</div>
+</div>
+<!-- Passenger Feedback & Route Detour Alerts Summary -->
+<div class="bg-surface-container p-space-md rounded-2xl flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold">Field Feedback &amp; Alerts</h3>
+<span class="font-label-sm text-label-sm text-primary">Live Intake</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Complaint Item -->
+<div class="bg-surface-container-low p-space-sm rounded-xl flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[18px]">ac_unit</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<p class="font-label-md text-label-md text-on-surface font-medium truncate">AC temperature on Bus 12A</p>
+<span class="font-label-sm text-label-sm text-primary bg-primary-container/20 px-2 py-0.5 rounded-full shrink-0">Under Review</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Passenger report: "Climate control stuck at low vent flow near 4th Row"</p>
+<div class="flex items-center gap-3 mt-2">
+<button class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1 hover:underline">
+<span class="material-symbols-outlined text-[14px]">reply</span> Respond to Rider
+              </button>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface">Dismiss</button>
+</div>
+</div>
+</div>
+<!-- Detour Warning Item -->
+<div class="bg-surface-container-low p-space-sm rounded-xl flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-error-container/20 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-error text-[18px]">warning</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<p class="font-label-md text-label-md text-on-surface font-medium truncate">Route 6 Detour Alert</p>
+<span class="font-label-sm text-label-sm text-error bg-error-container/30 px-2 py-0.5 rounded-full shrink-0">Active Detour</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Water main repair on Oak St. Buses bypassing Stops #14 and #15.</p>
+<div class="flex items-center justify-between mt-2 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Estimated clear: 18:00</span>
+<button class="font-label-sm text-label-sm text-secondary font-semibold hover:underline">View Geo-Fence</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Emergency Broadcast Modal Overlay (Hidden by Default) -->
+<div class="hidden fixed inset-0 z-50 bg-background/80 backdrop-blur-md flex items-center justify-center p-margin" id="broadcastModal">
+<div class="w-full max-w-sm bg-surface-container-high p-space-lg rounded-2xl flex flex-col gap-space-md shadow-2xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[24px]">crisis_alert</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Emergency Broadcast</h4>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant" id="closeBroadcastBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Transmit an immediate alert to all onboard digital displays and passenger mobile apps in Riverdale.
+      </p>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface">Broadcast Title</label>
+<input class="bg-surface-container px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none" type="text" value="System Delay: Heavy Weather Protocol"/>
+</div>
+<div class="flex gap-2 mt-2">
+<button class="flex-1 py-2.5 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md" id="cancelBroadcast">Cancel</button>
+<button class="flex-1 py-2.5 rounded-xl bg-error text-on-error font-label-md text-label-md font-bold" id="confirmBroadcast">Dispatch Now</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // System Clock Live Counter
+  function updateClock() {
+    const el = document.getElementById('live-telemetry-clock');
+    if (!el) return;
+    const now = new Date();
+    const hrs = String(now.getUTCHours()).padStart(2, '0');
+    const mins = String(now.getUTCMinutes()).padStart(2, '0');
+    const secs = String(now.getUTCSeconds()).padStart(2, '0');
+    el.textContent = `${hrs}:${mins}:${secs} UTC`;
+  }
+  setInterval(updateClock, 1000);
+  updateClock();
+
+  // Bus Card Highlight Interactivity
+  function highlightBus(busId) {
+    const card = document.getElementById(`card-bus-${busId}`);
+    if (card) {
+      card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      card.classList.add('bg-surface-container-highest');
+      setTimeout(() => {
+        card.classList.remove('bg-surface-container-highest');
+      }, 1400);
+    }
+  }
+
+  // Emergency Broadcast Modal Toggles
+  const broadcastBtn = document.getElementById('broadcastBtn');
+  const broadcastModal = document.getElementById('broadcastModal');
+  const closeBroadcastBtn = document.getElementById('closeBroadcastBtn');
+  const cancelBroadcast = document.getElementById('cancelBroadcast');
+  const confirmBroadcast = document.getElementById('confirmBroadcast');
+
+  function toggleModal(show) {
+    if (broadcastModal) {
+      if (show) broadcastModal.classList.remove('hidden');
+      else broadcastModal.classList.add('hidden');
+    }
+  }
+
+  if (broadcastBtn) broadcastBtn.addEventListener('click', () => toggleModal(true));
+  if (closeBroadcastBtn) closeBroadcastBtn.addEventListener('click', () => toggleModal(false));
+  if (cancelBroadcast) cancelBroadcast.addEventListener('click', () => toggleModal(false));
+  if (confirmBroadcast) {
+    confirmBroadcast.addEventListener('click', () => {
+      alert('Emergency Broadcast sent across all vehicle displays and public apps.');
+      toggleModal(false);
+    });
+  }
+</script></main></body></html>

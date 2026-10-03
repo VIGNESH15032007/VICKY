@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-fixed-dim": "#d0bcff", "secondary": "#ddb8ff", "on-surface-variant": "#cbc3d7", "error": "#ffb4ab", "outline-variant": "#494454", "on-primary-fixed-variant": "#5516be", "on-primary": "#3c0091", "primary": "#d0bcff", "surface-container-lowest": "#100c18", "on-primary-container": "#340080", "secondary-fixed": "#f0dbff", "primary-container": "#a078ff", "on-tertiary-fixed-variant": "#005236", "on-tertiary": "#003824", "surface-container-high": "#2c2834", "surface-bright": "#3b3744", "primary-fixed": "#e9ddff", "surface-variant": "#373340", "on-secondary-fixed": "#2c0051", "on-error": "#690005", "tertiary-fixed": "#6ffbbe", "tertiary": "#4edea3", "on-secondary-container": "#d1a1ff", "surface-container": "#211e2a", "surface-container-low": "#1d1a26", "on-secondary-fixed-variant": "#62259b", "on-surface": "#e7dff0", "surface": "#15121d", "on-primary-fixed": "#23005c", "tertiary-fixed-dim": "#4edea3", "surface-tint": "#d0bcff", "on-secondary": "#490081", "inverse-primary": "#6d3bd7", "inverse-surface": "#e7dff0", "surface-dim": "#15121d", "error-container": "#93000a", "on-error-container": "#ffdad6", "on-background": "#e7dff0", "tertiary-container": "#00a572", "secondary-fixed-dim": "#ddb8ff", "on-tertiary-fixed": "#002113", "surface-container-highest": "#373340", "secondary-container": "#62259b", "inverse-on-surface": "#322e3b", "outline": "#958ea0", "background": "#15121d", "on-tertiary-container": "#00311f" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter": "1rem", "space-xs": "0.25rem", "space-xl": "2rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem" }, "fontFamily": { "body-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "headline-xl": ["36px", {"lineHeight": "44px", "fontWeight": "700"}], "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}], "headline-lg": ["28px", {"lineHeight": "36px", "fontWeight": "700"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "label-sm": ["11px", {"lineHeight": "14px", "fontWeight": "500"}], "headline-xl-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}], "headline-lg-mobile": ["22px", {"lineHeight": "30px", "fontWeight": "600"}], "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}], "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.35)]"><div class="h-20 px-margin flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm min-w-0"><img alt="MetroPulse Transit Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XHo943g1t9c6rTj-fIl0gDPzD8rH5bR5Rj0GRd6Gp8ttjZ2bDym0IHMOjVZP1sJiqrmfV7udvDO_V0ErcEqBkY8fJWniRZvJItqqOa06-XU3oKrMbPBhfuo9FJGoX5s--huoDzUzTzvzfOeE2ZWr6sXZ2aWDT6O_bAQK0FsSZWu_KBW1RtQkhdfLoKaKTeim60guqApqAnJ0s2RRSEeqBkLWiZ_ttf3g4tQ97Ho0qsAFJh-YACQYeaGQA"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">MetroPulse Transit</span><span class="font-label-sm text-label-sm text-on-surface-variant hidden xs:inline">• Dashboard</span></div><div class="flex items-center gap-space-xs"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span><span class="font-label-sm text-label-sm text-tertiary tracking-wider font-semibold">LIVE GPS ACTIVE</span></div></div></div><div class="flex items-center gap-space-xs shrink-0"><button class="h-11 px-space-xs rounded-full bg-surface-container flex items-center gap-space-xs text-on-surface text-label-sm font-label-sm hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-primary text-[18px]">commute</span><span class="hidden sm:inline">Passenger</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApBErYEu-VfWjtA16fYK83m4JRrXs29LoF4fch7S_pdCdWOfhsbwDC-ELy3MGQyq9xRzOdZ_KrUPhx8wTJLaI-elvDwPfS-TPdz4PDfdCXfmZj6b4WLWNGLpWV21TqiOwAF2M604JaEGBpFJI8cB8olLtlSvpmWfU5s5jw-wsERFYZDGTW-oMSDcDEZ9fx__Hx5pYJPDE879b-_92G18Ca7ovS666lH-HjoOMi9XhSG5uzvVq5nlQW"/></div></div></header><main class="flex flex-col relative w-full pt-20 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin pb-space-xl space-y-space-lg">
+<!-- Welcome & Ambient Civic Presence -->
+<section class="flex flex-col space-y-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+          Oakridge Metro Zone
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">• Transit Mesh v4.2</span>
+</div>
+<button aria-label="Refresh telemetry" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</button>
+</div>
+<div class="flex items-baseline justify-between pt-1">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">
+        Welcome back, <span class="text-primary font-bold">Alex</span>
+</h1>
+<span class="font-label-md text-label-md text-on-surface-variant">Fri, 08:42 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+      High network reliability today. All municipal corridors fluid.
+    </p>
+</section>
+<!-- Quick Telemetry Search Bar -->
+<section class="relative">
+<div class="relative flex items-center w-full rounded-2xl bg-surface-container-low shadow-lg shadow-surface-container-lowest/60 focus-within:shadow-primary-container/20 transition-all duration-300">
+<div class="pl-4 pr-2 flex items-center pointer-events-none text-primary">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</div>
+<input class="w-full py-3.5 bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none" id="transit-search-input" placeholder="Search bus # (e.g. 42B) or route..." type="text"/>
+<div class="pr-2 flex items-center space-x-1.5">
+<button aria-label="Voice search" class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-all active:scale-90">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+<button aria-label="Filter routes" class="w-9 h-9 rounded-xl bg-primary-container text-on-primary flex items-center justify-center hover:opacity-90 transition-all active:scale-90 shadow-sm">
+<span class="material-symbols-outlined text-[19px]">tune</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Live Pulse Metrics Carousel / Compact Strip -->
+<section class="grid grid-cols-3 gap-2.5">
+<!-- Active Fleet -->
+<div class="flex flex-col p-3 rounded-2xl bg-surface-container-low relative overflow-hidden group">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Fleet</span>
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
+</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">18 Buses</div>
+<span class="font-label-sm text-label-sm text-tertiary font-medium mt-0.5 truncate">100% telemetry</span>
+<div class="absolute -right-3 -bottom-3 opacity-5 pointer-events-none text-on-surface">
+<span class="material-symbols-outlined text-[48px]">directions_bus</span>
+</div>
+</div>
+<!-- Reliability Rate -->
+<div class="flex flex-col p-3 rounded-2xl bg-surface-container-low relative overflow-hidden group">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">On-Time</span>
+<span class="material-symbols-outlined text-primary text-[14px]">verified</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">94.2%</div>
+<span class="font-label-sm text-label-sm text-primary font-medium mt-0.5 truncate">+1.8% vs avg</span>
+<div class="absolute -right-3 -bottom-3 opacity-5 pointer-events-none text-on-surface">
+<span class="material-symbols-outlined text-[48px]">speed</span>
+</div>
+</div>
+<!-- Nearest Node -->
+<div class="flex flex-col p-3 rounded-2xl bg-surface-container-low relative overflow-hidden group">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nearest</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">near_me</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight truncate">Central Sq</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium mt-0.5 truncate">180m • 2 min walk</span>
+<div class="absolute -right-3 -bottom-3 opacity-5 pointer-events-none text-on-surface">
+<span class="material-symbols-outlined text-[48px]">pin_drop</span>
+</div>
+</div>
+</section>
+<!-- Live Disruption / Municipal Service Notice -->
+<section class="rounded-2xl p-3.5 bg-surface-container-low flex items-start gap-3 relative overflow-hidden">
+<div class="w-8 h-8 rounded-xl bg-error-container text-on-error-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">alt_route</span>
+</div>
+<div class="flex flex-col min-w-0 pr-2">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-error font-bold tracking-wide uppercase">Advisory</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">• Line 15 Detour</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+        River Road resurfacing active. Route 15 skipping Oak Quay stop until 16:00. Use Central Pier.
+      </p>
+</div>
+<button aria-label="Dismiss alert" class="text-outline hover:text-on-surface transition-colors shrink-0">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</section>
+<!-- Active Buses Feed -->
+<section class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">radar</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Live Approaching Buses</h2>
+</div>
+<button class="font-label-md text-label-md text-primary hover:text-primary-fixed transition-colors flex items-center gap-0.5">
+        All Lines
+        <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Bus Card 1: 42B (Priority On-Time) -->
+<article class="flex flex-col rounded-2xl p-4 bg-surface-container-low hover:bg-surface-container transition-all duration-200 shadow-md">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="h-11 px-3 rounded-xl bg-primary-container text-on-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold tracking-tight shadow-sm">
+            42B
+          </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Blue Express</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">To City Hospital via Tech Park</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-headline-md text-headline-md text-tertiary font-bold tracking-tight">3 min</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold">On Time</span>
+</div>
+</div>
+<!-- Live Micro Progression & Telemetry Details -->
+<div class="mt-4 pt-3.5 flex flex-col space-y-2.5 bg-surface-container-lowest/50 -mx-4 -mb-4 p-4 rounded-b-2xl">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[16px]">navigation</span>
+<span>Next Stop: <strong class="text-on-surface font-semibold">Willow St</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">airline_seat_recline_normal</span>
+<span class="text-tertiary font-semibold">14 seats open</span>
+</div>
+</div>
+<!-- Occupancy Bar Visual -->
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden flex">
+<div class="bg-tertiary h-full rounded-full transition-all duration-500" style="width: 48%"></div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-outline">Vehicle #BP-4089 • Electric AC</span>
+<button class="h-9 px-3.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 hover:bg-primary-fixed transition-colors active:scale-95 shadow-sm shadow-primary/20">
+<span class="material-symbols-outlined text-[16px]">location_searching</span>
+            Live Track
+          </button>
+</div>
+</div>
+</article>
+<!-- Bus Card 2: 12A (Delayed Amber) -->
+<article class="flex flex-col rounded-2xl p-4 bg-surface-container-low hover:bg-surface-container transition-all duration-200 shadow-md">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="h-11 px-3 rounded-xl bg-secondary-container text-on-secondary-container font-headline-sm text-headline-sm flex items-center justify-center font-bold tracking-tight">
+            12A
+          </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Hillside Shuttle</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">To Greenfield Loop</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">7 min</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-label-sm text-label-sm font-semibold">+2 min Delay</span>
+</div>
+</div>
+<div class="mt-4 pt-3.5 flex flex-col space-y-2.5 bg-surface-container-lowest/50 -mx-4 -mb-4 p-4 rounded-b-2xl">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">navigation</span>
+<span>Next Stop: <strong class="text-on-surface font-semibold">Pine Ridge</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">airline_seat_recline_normal</span>
+<span class="text-secondary font-semibold">6 seats (Filling fast)</span>
+</div>
+</div>
+<!-- Occupancy Bar Visual -->
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden flex">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 82%"></div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-outline">Vehicle #HS-1102 • Mini-coach</span>
+<button class="h-9 px-3.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1.5 hover:bg-surface-bright transition-colors active:scale-95">
+<span class="material-symbols-outlined text-[16px]">map</span>
+            Route Info
+          </button>
+</div>
+</div>
+</article>
+<!-- Bus Card 3: 07 (Imminent Arrival NOW) -->
+<article class="flex flex-col rounded-2xl p-4 bg-surface-container-low hover:bg-surface-container transition-all duration-200 shadow-md">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="h-11 px-3 rounded-xl bg-surface-variant text-on-surface font-headline-sm text-headline-sm flex items-center justify-center font-bold tracking-tight">
+            07
+          </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Downtown Circular</span>
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Arriving at Central Square NOW</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-headline-sm text-headline-sm font-bold tracking-wider animate-pulse">
+            ARRIVING
+          </span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold mt-1">Platform 2</span>
+</div>
+</div>
+<div class="mt-4 pt-3.5 flex flex-col space-y-2.5 bg-surface-container-lowest/50 -mx-4 -mb-4 p-4 rounded-b-2xl">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px]">sensors</span>
+<span>Docking telemetry locked</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">airline_seat_recline_normal</span>
+<span class="text-tertiary font-semibold">22 seats open (Spacious)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden flex">
+<div class="bg-tertiary h-full rounded-full transition-all duration-500" style="width: 32%"></div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-outline">Vehicle #DC-0744 • High Capacity</span>
+<button class="h-9 px-3.5 rounded-xl bg-tertiary text-on-tertiary font-label-md text-label-md flex items-center gap-1.5 hover:bg-tertiary-fixed transition-colors active:scale-95 shadow-sm shadow-tertiary/20 font-semibold">
+<span class="material-symbols-outlined text-[16px]">qr_code_scanner</span>
+            Boarding Pass
+          </button>
+</div>
+</div>
+</article>
+</section>
+<!-- Interactive Live Geospatial Radar Snapshot -->
+<section class="flex flex-col space-y-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">explore</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Sector Telemetry Map</h2>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">GPS Refresh: 1.2s</span>
+</div>
+<!-- Map Container -->
+<div class="relative w-full h-48 rounded-2xl overflow-hidden bg-surface-container-lowest shadow-xl">
+<div class="w-full h-full bg-cover bg-center opacity-70" data-location="Oakridge Downtown Transit Hub" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA1kaG4XvBQJD5TRGGUePT3YNwJOuy7zNRXdXgm2aachmqW5C4DF_twwtRTur7hViWNmGIWxG6tWxxRe2VHfJCHPFOZwnJ18HCJwfYYois1HIIOfVj6NXNhSH1zxLa9k6ce5uCDX3GN9xY3ZjkA4hDMJNyMO20CtHx2gchyUH8iRsDFlqDnh4_UhYxFWBy0KPA-INvB_30H1AFbAUUiPT1JupV1qTn0E8QtHMuHeltfFw4rpw-6ht9g')"></div>
+<!-- Glowing Geospatial Radar Overlay Grid -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent pointer-events-none"></div>
+<!-- Real-time Vehicle Marker Pins (Simulated on Map) -->
+<div class="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 flex items-center gap-1.5 pointer-events-none">
+<div class="relative flex items-center justify-center">
+<span class="animate-ping absolute inline-flex h-7 w-7 rounded-full bg-primary opacity-60"></span>
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-[10px] shadow-lg">
+            42B
+          </div>
+</div>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm">
+          Willow St
+        </span>
+</div>
+<div class="absolute bottom-1/3 right-1/4 -translate-x-1/2 -translate-y-1/2 flex items-center gap-1.5 pointer-events-none">
+<div class="relative flex items-center justify-center">
+<span class="animate-ping absolute inline-flex h-7 w-7 rounded-full bg-tertiary opacity-60"></span>
+<div class="w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-bold text-[10px] shadow-lg">
+            07
+          </div>
+</div>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high/90 backdrop-blur-md text-tertiary font-label-sm text-label-sm">
+          At Station
+        </span>
+</div>
+<!-- Floating Map Control Trigger -->
+<div class="absolute bottom-3 right-3 flex items-center gap-2">
+<button class="px-3.5 py-1.5 rounded-xl bg-surface-container-high/95 backdrop-blur-md text-on-surface font-label-sm text-label-sm hover:bg-surface-bright transition-all flex items-center gap-1.5 active:scale-95 shadow-md">
+<span class="material-symbols-outlined text-[16px] text-primary">fullscreen</span>
+          Full Fleet Map
+        </button>
+</div>
+</div>
+</section>
+<!-- Quick Access & Recent Bookmarks -->
+<section class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">stars</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Pinned Lines &amp; Stations</h2>
+</div>
+<button class="font-label-md text-label-md text-secondary hover:underline">Edit Pins</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<!-- Pinned Route 104 -->
+<div class="flex items-center justify-between p-3.5 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all active:scale-[0.99] cursor-pointer">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-variant flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">route</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Route 104</span>
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Central Stn → North Market</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-label-md text-label-md text-tertiary font-bold">In 12m</span>
+<span class="font-label-sm text-label-sm text-outline">Freq: 15m</span>
+</div>
+</div>
+<!-- Pinned Stop #14 -->
+<div class="flex items-center justify-between p-3.5 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all active:scale-[0.99] cursor-pointer">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-variant flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]">signpost</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Stop #14</span>
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Oakridge Central Interchange</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-label-md text-label-md text-primary font-bold">2 min walk</span>
+<span class="font-label-sm text-label-sm text-outline">4 Lines active</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Passenger Commuter Perks & Smart Fleet Vibe -->
+<section class="rounded-2xl p-4 bg-gradient-to-r from-surface-container to-surface-container-low relative overflow-hidden flex items-center justify-between">
+<div class="flex flex-col space-y-1 z-10 max-w-[70%]">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">energy_savings_leaf</span>
+<span class="font-label-md text-label-md text-primary font-bold">Clean Transit Impact</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        You saved <strong class="text-tertiary">3.4kg CO₂</strong> this week by choosing MetroPulse green loops.
+      </p>
+</div>
+<div class="w-14 h-14 rounded-2xl bg-primary-container/20 flex items-center justify-center text-primary z-10 shrink-0">
+<span class="material-symbols-outlined text-[32px]">eco</span>
+</div>
+<!-- Ambient glow decorative circle -->
+<div class="absolute -right-6 -bottom-6 w-28 h-28 rounded-full bg-primary/10 blur-2xl pointer-events-none"></div>
+</section>
+</div>
+<script>
+  (function initDashboardInteractions() {
+    const searchInput = document.getElementById('transit-search-input');
+    if (searchInput) {
+      searchInput.addEventListener('focus', function() {
+        this.parentElement.classList.add('ring-2', 'ring-primary/40');
+      });
+      searchInput.addEventListener('blur', function() {
+        this.parentElement.classList.remove('ring-2', 'ring-primary/40');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-[#120B22]/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.5)]" data-active-classes="text-primary [filter:drop-shadow(0_0_8px_rgba(208,188,255,0.4))]"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-all text-primary [filter:drop-shadow(0_0_8px_rgba(208,188,255,0.4))]" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-all hover:text-on-surface" data-path="live-tracking" href="#"><span class="material-symbols-outlined text-[22px]">radar</span><span class="font-label-sm text-label-sm">Live Track</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-all hover:text-on-surface" data-path="route-search" href="#"><span class="material-symbols-outlined text-[22px]">search</span><span class="font-label-sm text-label-sm">Search</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-all hover:text-on-surface" data-path="nearby-stops" href="#"><span class="material-symbols-outlined text-[22px]">location_on</span><span class="font-label-sm text-label-sm">Stops</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant transition-all hover:text-on-surface" data-path="transit-alerts" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="font-label-sm text-label-sm">Alerts</span></a></div></nav></body></html>
